@@ -1,0 +1,36 @@
+#chat{
+    min-height: 60vh;
+    margin: 0px 30vw;
+    line-height: 2rem;
+}
+
+#chat>form>input, textarea{
+    width: 40vw;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+#chat>form>input:hover{
+    transform: skew(1.2rem);
+}
+#btn{
+    width: 50%;
+    height: 40px;
+    background: rgb(110, 38, 38);
+    padding:4px 6px;
+    margin:10px 0%;
+    transition: all 300ms ease-in;
+    &:hover{
+        height: 3em;
+        background: linear-gradient(45deg, rgb(1, 104, 16), rgb(121, 189, 3));
+        border: 2px solid green;
+        font-weight: bold;
+        font-size: large;
+    }
+}
+
+label{
+    display: block;
+    margin:5px 0px;
+}

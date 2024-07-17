@@ -1,0 +1,99 @@
+#div-top{
+    display: flex;
+}
+.rcontainer{
+    max-height: 30%;
+    max-width:40vw;
+    position: absolute;
+    top: 25vh;
+    left: 65vw;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+.hrbox{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform-style: preserve-3d;
+    animation: animate 15s infinite 0ms ease;
+}
+@keyframes animate {
+    0%{
+        transform: rotate3d(0,0,10,90deg);
+        /* transform: scale3d(1,1,1); */
+    }  
+    25%{
+        transform: rotate3d(90,90,30,180deg);        
+        /* transform: scale3d(1.2,1,2); */
+
+    }  
+    50%{
+        transform: rotate3d(270,120,180,0deg);
+        /* transform: scale3d(1,1,1); */
+    }  
+    100%{
+        transform: rotate3d(360,1,270,360deg);
+        /* transform: scale3d(1.2,1,2); */
+
+    }  
+}
+
+.rcard{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    color: white;
+    padding: 100px 0px;
+    box-sizing: border-box;
+    position: absolute;
+    font-size: 20px;
+    background-size: cover;
+    background-position:center;
+
+}
+img{
+    width: 200px;
+    margin-top: -100px;
+    border-radius: 20%;
+}
+#left{
+    right: 200px;
+    transform: rotateY(-90deg);
+}
+#right{
+    left: 200px;
+    transform: rotateY(90deg);
+}
+#top{
+    bottom: 200px;
+    transform: rotateX(90deg);
+}
+#bottom{
+    top: 200px;
+    transform: rotateX(-90deg);
+}
+#front{
+    transform: translateZ(100px);
+}
+#back{
+    transform: translateZ(-100px);
+}
+
+
+
+#eye{
+    transition:all 0.6s ;
+    &:hover{
+        transform: scale(1.2) translate(10px);
+        cursor: pointer;
+}}
+
+#social{
+    transition:all 0.6s ;
+    &:hover{
+        transform: scale(1.5) translate(5px);
+        cursor: pointer;
+}}

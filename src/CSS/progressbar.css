@@ -1,0 +1,20 @@
+#progress{
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #progress span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  
+  #progress div{
+    height: 100%;
+    background: repeating-linear-gradient(green, yellow 50%, rgb(144, 192, 41) 100%);
+    transition: transform ease-in-out 500ms;
+  }
+  
