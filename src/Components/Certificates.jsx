@@ -13,7 +13,7 @@ import es6 from '../images/es6.png'
 const Certificates = () => {
   return (
     <>
-    <div className="" id="mcert">
+    <div className="overflow-auto scrollbar-hide" id="mcert">
     <h2 className='text-2xl  font-bold text-center'>My Certifications</h2>
     <hr className='border-4  border-red-400 w-3/4 ml-28'></hr>
     <div className='mt-4' id="certificates">
